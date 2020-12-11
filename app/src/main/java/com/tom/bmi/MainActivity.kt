@@ -26,5 +26,12 @@ class MainActivity : AppCompatActivity() {
             .setPositiveButton("OK", null)
             .setNeutralButton("Cancel", null)
             .show()
+        b_help.setOnClickListener {
+            AlertDialog.Builder(this)
+                .setTitle("BMI說明")
+                .setMessage("體重(kg)/身高的平方(m)")
+                .setPositiveButton("OK", null)
+                .show()
+        }
     }
 }
